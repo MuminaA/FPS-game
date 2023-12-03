@@ -18,6 +18,7 @@ public class Target : MonoBehaviour
             {
                 Respawn();
             }
+            Scoreboard.scoreCount += 1;
         }
     }
 
