@@ -28,6 +28,6 @@ public class Target : MonoBehaviour
 
         // Move target to new respawn position
         transform.position = respawnPosition;
-        respawnPosition = new Vector3(Random.Range(-10, 10), 1, Random.Range(-10, 10));
+        respawnPosition = new Vector3(Random.Range(-10, 19), Random.Range(1, 5), 8);
     }
 }
