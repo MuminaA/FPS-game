@@ -29,7 +29,7 @@ public class Target : MonoBehaviour
 
     void SetNewRespawnPosition()
     {
-        respawnPosition = new Vector3(Random.Range(-10, 10), Random.Range(1, 5), 8);
+        respawnPosition = new Vector3(Random.Range(-5, 10), Random.Range(1, 5), 8);
     }
 
     void Respawn()
