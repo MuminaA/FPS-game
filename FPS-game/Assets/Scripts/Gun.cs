@@ -31,7 +31,7 @@ public class Gun : MonoBehaviour
 
     void Shoot()
     {
-        Debug.Log("shoot!");
+        // Debug.Log("shoot!");
         GameObject bullet = Instantiate(bulletPrefab, bulletPoint.transform.position, transform.rotation);
         // the speed of the bullet
         bullet.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed);
