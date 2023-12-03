@@ -21,13 +21,24 @@ public class Target : MonoBehaviour
         }
     }
 
+    void Start()
+    {
+        SetNewRespawnPosition();
+    }
+
+    void SetNewRespawnPosition()
+    {
+        respawnPosition = new Vector3(Random.Range(-10, 10), Random.Range(1, 5), 8);
+    }
+
     void Respawn()
     {
         // reset health
         health = 10f;
 
+        SetNewRespawnPosition();
+
         // Move target to new respawn position
         transform.position = respawnPosition;
-        respawnPosition = new Vector3(Random.Range(-10, 19), Random.Range(1, 5), 8);
     }
 }
