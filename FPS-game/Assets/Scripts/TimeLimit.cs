@@ -14,16 +14,19 @@ public class TimeLimit : MonoBehaviour
     //new lines
     public float timeValue = 90;
     public Text timerText;
-    
 
 
     // Update is called once per frame
     void Update()
     {
-        if (timeValue == 0)
+        if (timeValue <= 0)
         {
-            gameWintext.SetActive(true);
-            FadeOut.SetActive(true);
+            // gameWintext.SetActive(true);
+            // FadeOut.SetActive(true);
+            SceneManager.LoadScene(2);
+
+            // Load the menu scene after a delay (you can adjust the delay as needed)
+            // StartCoroutine(LoadMenuSceneAfterDelay(2.0f));
         }
 
         else if (timeValue > 0)
